@@ -28,7 +28,7 @@ public class AccountController {
 	@Autowired
 	private AccountService accountservice;
 	
-	@PostMapping("/save")
+	@PostMapping("/saveall")
 	public ResponseEntity<Accounts> saveaccount(@RequestBody Accounts account) {
 		
 		Accounts addaccount = accountservice.addaccount(account);
